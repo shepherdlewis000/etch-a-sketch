@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+<body>
+    <h1>Simple Etch-a-sketch</h1>
+
+    <div id="controls">
+            <p id="blockNum">Restart? <br><span class="smaller">Blocks per side (5-200)</span> 
+                    <input type="number" value="16" id="numBlocks" name="numBlocks" min="5" max="200">
+            </p>
+            <p id="paintInstr">Paintbrush on/off<br><span class="smaller">Use ENTER key to toggle</span>
+            <button id="onOff"></button>
+            </p>
+
+            <p id="chColor">Choose color<br>
+                <span class="smaller">Random colors every block<input name="randomCheckBox" type="checkbox" id="myCheck"></span>
+                
+                <!-- <button class="jscolor {valueElement:'chosen-value', onFineChange:'setColor(this)'}"> -->
+                
+                <span id="colorPicker">
+                    <button id="jsc" class="jscolor {valueElement:null,value:'808080', onFineChange:'setColor(this)'}">Pick a color</button>
+                </span>
+                
+            </p>
+    </div>
+    
+
+    <div class="whole" id="grid">
+        
+
+    </div>
+
+    <script src="jscolor.js"></script>
+    <script src="etch.js"></script>
+</body>
